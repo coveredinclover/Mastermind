@@ -14,11 +14,11 @@
 user_array = []
 array1 = ["green", "red", "blue"]
 push_array = []
-
+bool_array = []
 
 p "lmk how many bb"
 times = gets.chomp.to_i
-
+times3 = times
 
 while times > 0
   push_array.push(array1[rand(3)])
@@ -33,4 +33,17 @@ while times2 > 0
   times2 -= 1
 end
 
+n = 0
+while times3 > 0
+  if push_array[n] == user_array[n]
+    bool_array.push(true)
+  else
+    bool_array.push(false)
+  end
+  times3 -= 1
+  n += 1
+end
+
 p push_array
+p bool_array
+
