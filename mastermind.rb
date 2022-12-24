@@ -47,3 +47,15 @@ end
 p push_array
 p bool_array
 
+print_array = []
+m = 0
+for i in bool_array
+  if bool_array[m] == true
+    print_array.push("🟢")
+  else
+    print_array.push("🔴")
+  end
+  m += 1
+end
+
+p print_array
